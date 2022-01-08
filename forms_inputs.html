@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Inputs</title>
+</head>
+<body>
+    <!-- understand that HTML and CSS are to display the form but backend langagages 
+        are what is used to actually process the form -->
+
+        <!-- form ---action is where the form is going to be submitted to somtimes 
+            thats a php file so you can insert the data into a database-->
+        
+            <form action="process.php">
+                <!-- text input -->
+                <div>
+                    <label for="name">Name</label><br>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+
+                <!-- email input -->
+                <div>
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email" placeholder="Enter an email">
+                </div>
+
+                <!-- Message input -->
+                <div>
+                    <label for="message">Message</label><br>
+                    <textarea name="message" id="message" cols="50" rows="5"></textarea>
+                </div>
+
+                <!-- select input -->
+                <div>
+                    <label for="sex">Sex</label>
+                    <select name="sex" id="sex">Sex
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+
+                <!-- number input -->
+                <div>
+                    <label for="age">Age</label><br>
+                    <input type="number" name="age" id="age">
+                </div>
+
+                <!-- date input -->
+                <div>
+                    <label for="birthdate">Birthdate</label><br>
+                    <input type="date" name="birthdate" id="birthdate">
+                </div>
+
+                <!-- radio input -->
+                <div>
+                    <label for="membership">Membership</label>
+                    <input type="radio" name="membership" value="simple" id="membership"> Simple
+                    <input type="radio" name="membership" value="standard" id="membership" checked> Standard
+                    <input type="radio" name="membership" value="super" id="membership"> Super
+                </div>
+
+                <!-- checkbox input -->
+                <div>
+                    <label for="membership">I like....</label>
+                    <input type="checkbox" name="likes" value="bike" id="likes"> Bikes
+                    <input type="checkbox" name="likes" value="car" id="likes" checkbox> Cars
+                    <input type="checkbox" name="likes" value="boat" id="likes"> Boats
+                </div>
+
+                <!-- submit button input -->
+                <input type="submit" value="submit">
+
+                <!-- useing button tag -->
+                <button type="submit">Submit</button>
+                
+            </form>
+    
+</body>
+</html>
