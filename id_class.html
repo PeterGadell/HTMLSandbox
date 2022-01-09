@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divs and Span, Id and Class</title>
+    <style>
+        .card{
+            border: 1px solid #ccc;
+            background-color: beige;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        .enhance{
+            color: gold;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- id's are for one element, class can be used for many elements. CSS grabs onto these to style your HTML -->
+    <!-- divs are block elements, spans are inline elements -->
+    <div id="main-header">
+        <h1>My website</h1>
+        <p>This is a site about me</p>
+    </div>
+    <ul id="main-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <div id="about" class="card">
+        <h3>About</h3>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, reiciendis 
+            aperiam quasi, iure <span class="enhance">ut porro voluptatum tenetur officia ea, 
+            omnis harum!</span> Modi fugiat ea nesciunt sint eos officia enim delectus?
+        </p>
+    </div>
+
+    <div id="contact" class="card">
+        <h3>Contact</h3>
+        <ul>
+            <li>Adress: 509 kramer DR</li>
+            <li>Phone: (703) 938-3037</li>
+            <li>Email: Petermgadell@gmail.com</li>
+        </ul>
+    </div>
+
+    <div id="footer">
+        <p>Copyright 2022</p>
+    </div>
+
+    
+</body>
+</html>
